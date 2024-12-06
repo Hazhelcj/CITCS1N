@@ -19,23 +19,23 @@ public class Challenge_no_1 {
 		
 		//get the quantities of the product from the user
 		System.out.println("Enter the stock quantities for 10 products:");
-        for (int i = 0; i < 10; i++) {
-            System.out.print("Enter quantity for product " + (i + 1) + ": ");
-            stockQuantities[i] = input.nextInt();
+        for (int x = 0; x < 10; x++) {
+            System.out.print("Enter quantity for product " + (x + 1) + ": ");
+            stockQuantities[x] = input.nextInt();
         }
         
         System.out.println();
         
 		//get the prices of the product from the user
         System.out.println("Enter the prices for 10 products:");
-        for (int i = 0; i < 10; i++) {
-            System.out.print("Enter price for product " + (i + 1) + ": PHP ");
-            prices[i] = input.nextDouble();
+        for (int x = 0; x < 10; x++) {
+            System.out.print("Enter price for product " + (x + 1) + ": PHP ");
+            prices[x] = input.nextDouble();
         }
         
         // calculate the total value of all items in stock
-        for (int i = 0; i < 10; i++) {
-            totalStockValue += stockQuantities[i] * prices[i];
+        for (int x = 0; x < 10; x++) {
+            totalStockValue += stockQuantities[x] * prices[x];
         }
 		
         //outputs the total value of the stocks
